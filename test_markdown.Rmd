@@ -1,0 +1,18 @@
+---
+title: "test markdown"
+author: "cdotson"
+date: "February 5, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+science is happenign here!
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+data("mtcars")
+hist(mtcars$cyl)
+```
+

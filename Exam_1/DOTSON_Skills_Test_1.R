@@ -46,7 +46,35 @@ dev.off()
 
 #Part IV
 
-group_by(df, df$Year_Collected)
+group_by(df, df$Year_Collected) %>% summarise(df$DNA_Concentration_Katy)
+
+
+?sum
+?summarise
+
+
+#Part V
+
+?subset
+
+
+df1 = subset(df, df$Lab == "Downstairs")
+
+df1$Date_Collected = as.POSIXct(df1$Date_Collected)
+
+
+plot(df1$Date_Collected, df1$DNA_Concentration_Ben, xlab = "Date_Collected", ylab = "DNA_Concentration_Ben")
+
+
+jpeg("Ben_DNA_over_time.jpg")
+
+plot(df1$Date_Collected, df1$DNA_Concentration_Ben, xlab = "Date_Collected", ylab = "DNA_Concentration_Ben")
+
+dev.off()
+
+
+#Part VI
+
 
 
 

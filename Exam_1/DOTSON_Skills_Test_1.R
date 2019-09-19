@@ -127,6 +127,8 @@ data.frame(Year = Extraction_Year, Average = Average_Value)
 
 df3 = data.frame(Year = Extraction_Year, Average = Average_Value) 
 
+#I am sure there is an easier way to do this, but this does seem to be working!
+
 max(df3$Average)
 
 #max shows the highest value but not which row (year) it is.
